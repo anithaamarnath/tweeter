@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
      <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+     <link rel="stylesheet" href="/styles/new-container.css" type="text/css" />
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -30,7 +32,7 @@
     </nav>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main class="tweet-container">
       <section class="new-tweet">
       <h2>Compose Tweet</h2>
        <form method="POST"  action="/tweets/">
@@ -38,7 +40,19 @@
       <input type="submit" value="Tweet">
       <span class="counter">140</span>
     </form>
-      </section>
+      </section><br>
+      <section id="tweets-container">
+       <article class="tweet">
+         <header class="tweet-header">
+           <img class="tweet-img" src="http://www.pngall.com/wp-content/uploads/1/Smile.png" alt="Smiley face" width="42" height="42">
+           <h3 class = "tweet-h3">flkgkgklgl</h3>
+           <address class= "tweet-address">Billy</address>
+         </header>
+         <p>fklgflkgflkgflkgf</p>
+         <footer class="tweet-footer">time should be added</footer>
+       </article>
+
+     </section>
 
     </main>
 
