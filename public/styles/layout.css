@@ -38,3 +38,6 @@ body {
 
 
  }
+ #nav-bar{
+  z-index: 1000000;
+ }
