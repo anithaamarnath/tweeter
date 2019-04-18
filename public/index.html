@@ -36,8 +36,8 @@
           method: 'POST',
           data: data
         }).then(
-          (res) => { }, //console.log('success!!!!!', res) }, // success (200-300)
-          (err) => { }//console.log('shit') } // 400-500
+          (res) => {  console.log('success!!!!!', res) }, // success (200-300)
+          (err) => { console.log('error') } // 400-500
         )
       });
     });
@@ -58,7 +58,7 @@
       <h2>Compose Tweet</h2>
        <form method="POST"  action="/tweets/">
         <textarea name="text" placeholder="What are you humming about?"></textarea>
-        <input  type="submit" value="Tweet">
+        <input  id="tweet-submit" type="submit" value="Tweet" name="text">
         <span class="counter">140</span>
       </form>
       </section><br>

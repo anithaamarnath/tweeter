@@ -1,20 +1,32 @@
 $(document).ready(function() {
-  // --- our code goes here ---
-    var text = $('textarea[name=text]');
-    var counter= $('span.counter');
-    console.dir(counter);
+ // --- our code goes here ---
+ //console.log(window);
+ var text = $('textarea[name=text]');
 
+ let counter = $('span.counter');
+ var button = $('#tweet-submit');
+ console.log(button);
+ console.log(text);
+ //console.dir();
 
-  text.on('keyup', function(event) {
-    let charLen=140-$(this).val().length;
-    counter.text(charLen);
-    if(charLen<0)
+ text.on('keyup', function(event){
+   let cLeft = 140 - $(this).val().length;
+   counter.text(cLeft);
+   if(cLeft < 0){
+     $('span.counter').css("color", "red");
+     alert("Tweet is too long");
+   }
 
-     $("span.counter").css("color" , "red");
+ });
+button.on('click',function(event){
 
-  });
+   if(text.val().length === 0){
+     alert("Tweets can't be empty");
+     event.preventDefault();
+      console.log("hi ",event);
+   }
+ });
 
 
 });
-
 
