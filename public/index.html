@@ -18,20 +18,12 @@
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
+
+
+
+    <script type="text/javascript" src="/scripts/new-tweet.js"></script>
     <script type="text/javascript" src="/scripts/app.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script>
-     $(document).ready(function(){
-       $('#nav-compose').on('click', function () {
-         $('.new-tweet').slideToggle();
-         //$( "textarea" ).focus();
-       });
-
-
-     });
-   </script>
     </head>
 
   <body>
@@ -52,6 +44,7 @@
         <input  id="tweet-submit" type="submit" value="Tweet" name="text">
         <span class="counter">140</span>
       </form>
+      <label class="tweet-error">this is message</label>
       </section><br>
       <section id="tweets-container">
        <!-- <article class="tweet">
