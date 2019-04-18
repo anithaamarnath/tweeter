@@ -116,10 +116,11 @@ function loadTweets() {
     });
   }
   loadTweets();
-});
-var $tweet = createTweetElement(tweetData);
 
-$(document).ready(function () {
-  $('#tweets-container').append($tweet);
 });
+// var $tweet = createTweetElement(tweetData);
+
+// $(document).ready(function () {
+//   $('#tweets-container').append($tweet);
+// });
 

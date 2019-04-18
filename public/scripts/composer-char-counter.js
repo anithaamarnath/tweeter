@@ -27,6 +27,16 @@ button.on('click',function(event){
    }
  });
 
+// $( "#clickme" ).click(function() {
+//   $( "#book" ).toggle( "slow", function() {
+//     // Animation complete.
+//   });
+// });
+// $('.tweet-container').on('click', function () {
+// $('#nav-compose').slideToggle();
+// });
+
+
 
 });
 
