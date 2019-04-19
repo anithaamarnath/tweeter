@@ -5,9 +5,8 @@ $(document).ready(function() {
 
  let counter = $('span.counter');
  var button = $('#tweet-submit');
- //console.log(button);
- //console.log(text);
- //console.dir();
+ var form = $('#tweet-form')
+
 
  text.on('keyup', function(event){
    let cLeft = 140 - $(this).val().length;
@@ -45,6 +44,11 @@ $('#nav-compose').on('click', function () {
          $('.new-tweet').slideToggle();
          $( "textarea" ).focus();
        });
+form.on('submit',function(){
+   counter.text(0);
+   counter.css("color", "black");
+
+ });
 
 
 
