@@ -6,10 +6,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Getting Started
 
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+
+1. Install dependencies using the `npm install` command.
+2. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
+3. Go to <http://localhost:8080/> in your browser.
 
 ## Dependencies
 
@@ -21,5 +21,13 @@ This repository is the starter code for the project: Students will fork and clon
 - md5: 2.1.0
 
 ## Screenshots
+!["Screenshot of Tweet page"](https://github.com/anithaamarnath/tweeter/blob/master/screenshot/Screen%20Shot%202019-04-19%20at%2012.55.47%20PM.png)
+!["Screenshot of Tweet compose"](https://github.com/anithaamarnath/tweeter/blob/master/screenshot/Screen%20Shot%202019-04-19%20at%2012.57.29%20PM.png)
+!["Screenshot of Tweet message"](https://github.com/anithaamarnath/tweeter/blob/master/screenshot/Screen%20Shot%202019-04-19%20at%2012.57.14%20PM.png)
+!["Screenshot of Tweet Error message"](https://github.com/anithaamarnath/tweeter/blob/master/screenshot/Screen%20Shot%202019-04-19%20at%2012.56.43%20PM.png)
+!["Screenshot of Tweet successfuly message display" ](
+https://github.com/anithaamarnath/tweeter/blob/master/screenshot/Screen%20Shot%202019-04-19%20at%2012.55.47%20PM.png)
+
+
 
 
