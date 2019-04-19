@@ -15,9 +15,6 @@ module.exports = function makeDataHelpers(db) {
     callback(null, true);
     });
   },
-
-
-
    getTweets(callback) {
       db.collection("tweets").find().toArray((err, tweets) => {
        if (err) {
@@ -25,8 +22,7 @@ module.exports = function makeDataHelpers(db) {
        }
        callback(null, tweets);
      });
-   } // end getTweets
+   }
 
-
- }; //end return
+ };
 }

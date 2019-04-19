@@ -12,10 +12,18 @@ var createTweetElement = function (object) {
   let $address = $ ('<address>').addClass("tweet-address").text(object.user.handle);
   let $header= $ ('<header>').addClass("tweet-header");
   $header.append($img).append($h3).append($address);
+
   let $p = $('<p>').text(object.content.text);
-  let $footer= $('<footer>').text(object.created_at);
-$tweet.append($header).append($p).append($footer);
-return $tweet;
+  let $footer= $('<footer>').addClass("tweet-footer");
+
+  let $timestamp = $("<div>").addClass("timestamp").text(moment(object.created_at).fromNow()).appendTo($footer);
+
+  let $pIcons = $("<div>").addClass("icons").appendTo($footer);
+  let $iflag =$("<i>").addClass("far fa-flag").appendTo($pIcons);
+  let $iRetweet =$("<i>").addClass("fas fa-retweet").appendTo($pIcons);
+  let $iHeart =$("<i>").addClass("far fa-heart").appendTo($pIcons);
+  $tweet.append($header).append($p).append($footer);
+  return $tweet;
 }
 
 function renderTweets(tweets){
