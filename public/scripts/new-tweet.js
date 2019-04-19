@@ -12,7 +12,7 @@ text.on('keyup', function(event){
      $('.tweet-error').text("Tweets is too long");
       $('.tweet-error').css('display', 'block');
     }
-  if($(this).val().length > 0 && $(this).val().length <= 140) {
+  if($(this).val().length >= 0 && $(this).val().length <= 140) {
     $('span.counter').css("color", "black");
     $('.tweet-error').css('display', 'none');
   }
