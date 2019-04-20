@@ -12,12 +12,9 @@ var createTweetElement = function (object) {
   let $address = $ ('<address>').addClass("tweet-address").text(object.user.handle);
   let $header= $ ('<header>').addClass("tweet-header");
   $header.append($img).append($h3).append($address);
-
   let $p = $('<p>').text(object.content.text);
   let $footer= $('<footer>').addClass("tweet-footer");
-
   let $timestamp = $("<div>").addClass("timestamp").text(moment(object.created_at).fromNow()).appendTo($footer);
-
   let $pIcons = $("<div>").addClass("icons").appendTo($footer);
   let $iflag =$("<i>").addClass("far fa-flag").appendTo($pIcons);
   let $iRetweet =$("<i>").addClass("fas fa-retweet").appendTo($pIcons);
@@ -31,8 +28,6 @@ function renderTweets(tweets){
    $('#tweets-container').prepend(createTweetElement(element));
  });
 }
-
-// Test / driver code (temporary)
 
 $(document).ready(function(){
   $('form').on('submit', function(event) {
@@ -50,7 +45,7 @@ $(document).ready(function(){
             let form= document.getElementById('tweet-form');
             form.reset();
           },
-          (err) => { console.log('error') } // 400-500
+          (err) => { console.log('error') }
         )
       });
 
@@ -60,7 +55,7 @@ function loadTweets() {
     .then(function (res) {
       renderTweets(res);
 
-      //console.log('Success: ',res);
+
 
     });
   }

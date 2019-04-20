@@ -19,6 +19,7 @@ This repository is the starter code for the project: Students will fork and clon
 - chance: 1.0.2
 - express: 4.13.4
 - md5: 2.1.0
+- mongodb: 2.2.36
 
 ## Screenshots
 !["Screenshot of Tweet page"](https://github.com/anithaamarnath/tweeter/blob/master/screenshot/Screen%20Shot%202019-04-19%20at%2012.55.47%20PM.png)
